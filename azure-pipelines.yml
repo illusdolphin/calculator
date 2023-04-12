@@ -16,5 +16,6 @@ steps:
 
 - script: |
     npm install
+    echo start bulding
     npm run build
   displayName: 'npm install and build'

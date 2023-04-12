@@ -18,4 +18,13 @@ steps:
     npm install
     echo start bulding
     npm run build
-  displayName: 'npm install and build'
+    npm test
+  displayName: 'npm install'
+
+- script: |
+    npm run build
+  displayName: 'build'
+
+- script: |
+    npm test
+  displayName: 'test'
